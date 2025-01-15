@@ -23,8 +23,8 @@ public class Ball : MonoBehaviour
     {
 		//Vector3 position = transform.position;
 		Vector3 velocity = Vector3.zero;
-		velocity.x = Input.GetAxis("horizontal");
-		velocity.z = Input.GetAxis("vertical");
+		velocity.x = Input.GetAxis("Horizontal");
+		velocity.z = Input.GetAxis("Vertical");
 		transform.position += velocity * speed * Time.deltaTime;
 
 		if (Input.GetKeyDown(KeyCode.Space))
